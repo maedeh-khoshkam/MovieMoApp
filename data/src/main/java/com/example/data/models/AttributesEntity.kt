@@ -79,7 +79,7 @@ data class BadgeEntity(
     var free: Boolean? = null,
     var exclusive: Boolean? = null,
     var commingsoon: Boolean? = null,
-    var info: ArrayList<String> = arrayListOf()
+    var info: List<String>? = arrayListOf()
 
 )
 
@@ -126,7 +126,7 @@ data class SubtitleEntity(
 
 data class AudioEntity(
 
-    var languages: List<String> = arrayListOf(),
+    var languages: List<String>? = arrayListOf(),
     var isMultiLanguage: Boolean? = null
 
 )

@@ -79,7 +79,7 @@ data class Badge(
     var free: Boolean? = null,
     var exclusive: Boolean? = null,
     var commingsoon: Boolean? = null,
-    var info: ArrayList<String>? = arrayListOf()
+    var info: List<String>? = arrayListOf()
 
 )
 
