@@ -48,10 +48,20 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    composeOptions {
+        kotlinCompilerExtensionVersion = Versions.compose_version
+    }
 }
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+
+    // Modules
+    implementation(project(Modules.domain))
+    implementation(project(Modules.data))
+    implementation(project(Modules.presentation))
+    implementation(project(Modules.remote))
+    implementation(project(Modules.cache))
 
     // Core Dependencies
     implementation(UiDep.kotlin)

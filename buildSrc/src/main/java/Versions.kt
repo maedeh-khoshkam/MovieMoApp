@@ -1,14 +1,15 @@
 object Versions {
 
     const val composeVersion: String = "1.2.1"
-    const val gradleVersion = "7.0.2"
+    const val gradleVersion = "7.1.2"
     const val gradleNavigationArgVersion = "2.3.5"
-    const val kotlinVersion = "1.5.31"
+    const val kotlinVersion = "1.7.10"
     const val ktLintVersion = "10.2.0"
+    const val compose_version: String = "1.3.0"
 
     // Core dependencies
     const val javaxInjectVersion = "1"
-    const val coreKtxVersion = "1.6.0"
+    const val coreKtxVersion = "1.9.0"
     const val appCompatVersion = "1.3.1"
     const val materialVersion = "1.4.0"
     const val constraintLayoutVersion = "2.1.0"
