@@ -1,8 +1,8 @@
-package com.example.domain.models
+package com.example.data.models
 
 
 
-data class Attributes(
+data class AttributesEntity(
 
     var linkType: String? = null,
     var linkKey: String? = null,
@@ -13,32 +13,32 @@ data class Attributes(
     var movieTitle: String? = null,
     var movieTitleEn: String? = null,
     var tagId: String? = null,
-    var serial: Serial? = Serial(),
+    var serial: SerialEntity? = SerialEntity(),
     var watermark: Boolean? = null,
     var HD: Boolean? = null,
     var watchListAction: String? = null,
     var commingsoonTxt: String? = null,
-    var relData: RelData? = RelData(),
-    var badge: Badge? = Badge(),
+    var relData: RelDataEntity? = RelDataEntity(),
+    var badge: BadgeEntity? = BadgeEntity(),
     var rateEnable: Boolean? = null,
     var descr: String? = null,
     var cover: String? = null,
     var publishDate: String? = null,
     var ageRange: String? = null,
-    var pic: Pic? = Pic(),
+    var pic: PicEntity? = PicEntity(),
     var rateAvrage: String? = null,
     var avgRateLabel: String? = null,
     var proYear: String? = null,
     var imdbRate: String? = null,
-    var categories: List<Categories> = arrayListOf(),
+    var categories: List<CategoriesEntity> = arrayListOf(),
     var duration: String? = null,
-    var countries: List<Countries> = arrayListOf(),
-    var dubbed: Dubbed? = Dubbed(),
-    var subtitle: Subtitle? = Subtitle(),
-    var audio: Audio? = Audio(),
-    var languageInfo: LanguageInfo? = LanguageInfo(),
+    var countries: List<CountriesEntity> = arrayListOf(),
+    var dubbed: DubbedEntity? = DubbedEntity(),
+    var subtitle: SubtitleEntity? = SubtitleEntity(),
+    var audio: AudioEntity? = AudioEntity(),
+    var languageInfo: LanguageInfoEntity? = LanguageInfoEntity(),
     var director: String? = null,
-    var lastWatch: List<String> = arrayListOf(),
+    var lastWatch: ArrayList<String> = arrayListOf(),
     var freemium: Boolean? = null,
     var position: Int? = null,
     var sid: Int? = null,
@@ -46,7 +46,7 @@ data class Attributes(
 )
 
 
-data class Serial(
+data class SerialEntity(
 
     var enable: Boolean? = null,
     var parentTitle: String? = null,
@@ -59,7 +59,7 @@ data class Serial(
 )
 
 
-data class RelData(
+data class RelDataEntity(
 
     var relType: String? = null,
     var relId: String? = null,
@@ -70,7 +70,7 @@ data class RelData(
 )
 
 
-data class Badge(
+data class BadgeEntity(
 
     var backstage: Boolean? = null,
     var vision: Boolean? = null,
@@ -79,12 +79,12 @@ data class Badge(
     var free: Boolean? = null,
     var exclusive: Boolean? = null,
     var commingsoon: Boolean? = null,
-    var info: ArrayList<String>? = arrayListOf()
+    var info: ArrayList<String> = arrayListOf()
 
 )
 
 
-data class Pic(
+data class PicEntity(
 
     var movieImgS: String? = null,
     var movieImgM: String? = null,
@@ -92,7 +92,7 @@ data class Pic(
 
 )
 
-data class Categories(
+data class CategoriesEntity(
 
     var titleEn: String? = null,
     var title: String? = null,
@@ -101,14 +101,14 @@ data class Categories(
 
 )
 
-data class Countries(
+data class CountriesEntity(
 
     var country: String? = null,
     var countryEn: String? = null
 
 )
 
-data class Dubbed(
+data class DubbedEntity(
 
     var enable: Boolean? = null,
     var text: String? = null
@@ -116,7 +116,7 @@ data class Dubbed(
 )
 
 
-data class Subtitle(
+data class SubtitleEntity(
 
     var enable: Boolean? = null,
     var text: String? = null
@@ -124,14 +124,14 @@ data class Subtitle(
 )
 
 
-data class Audio(
+data class AudioEntity(
 
-    var languages: List<String>? = arrayListOf(),
+    var languages: List<String> = arrayListOf(),
     var isMultiLanguage: Boolean? = null
 
 )
 
-data class LanguageInfo(
+data class LanguageInfoEntity(
 
     var flag: String? = null,
     var text: String? = null
