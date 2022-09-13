@@ -4,9 +4,9 @@ object Versions {
     const val navigationComposeVersion: String = "2.5.0-alpha01"
     const val gradleVersion = "7.2.2"
     const val gradleNavigationArgVersion = "2.3.5"
-    const val kotlinVersion = "1.7.10"
+    const val kotlinVersion = "1.6.21"
     const val ktLintVersion = "10.2.0"
-    const val compose_version: String = "1.3.0"
+    const val compose_version: String = "1.2.0-rc02"
 
     // Core dependencies
     const val javaxInjectVersion = "1"
@@ -37,7 +37,7 @@ object Versions {
     const val CoilImageVersion = "2.0.0"
 
     // Dagger - Hilt dependencies
-    const val hiltAndroidVersion = "2.43.2"
+    const val hiltAndroidVersion = "2.42"
     const val hiltNavigationAndroidVersion = "1.0.0-alpha03"
 
     // Timber logging dependencies
