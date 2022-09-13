@@ -48,6 +48,17 @@ android {
     buildFeatures {
         viewBinding = true
     }
+
+    buildFeatures {
+        compose = true
+    }
+
+    packagingOptions {
+        resources {
+            excludes += ("/META-INF/{AL2.0,LGPL2.1}")
+            excludes +=("/META-INF/DEPENDENCIES")
+        }
+    }
     composeOptions {
         kotlinCompilerExtensionVersion = Versions.compose_version
     }
@@ -79,6 +90,7 @@ dependencies {
     implementation(UiDep.navigationUiKtx)
     // Dagger-Hilt
     implementation(UiDep.daggerHilt)
+    implementation(UiDep.hiltNavigationAndroid)
     kapt(UiDep.daggerHiltKapt)
 
     //Jetpack Compose
@@ -88,10 +100,13 @@ dependencies {
     implementation(UiDep.composeMaterial)
     implementation(UiDep.composeMaterialIconCore)
     implementation(UiDep.composeMaterialIconExtended)
-
+    implementation(UiDep.navigationCompose)
+    implementation(UiDep.liveDataCompose)
     // Glide
     implementation(UiDep.glide)
+    implementation(UiDep.glideImage)
     kapt(UiDep.glideKapt)
+
     // Timber
     implementation(UiDep.timber)
     // Test Dependencies

@@ -50,7 +50,7 @@ data class AttributesModel (
 
 data class AudioModel (
 
-    @SerializedName("languages"       ) var languages       : ArrayList<String> = arrayListOf(),
+    @SerializedName("languages"       ) var languages       : ArrayList<String>? = arrayListOf(),
     @SerializedName("isMultiLanguage" ) var isMultiLanguage : Boolean?          = null
 
 )
@@ -64,7 +64,6 @@ data class BadgeModel (
     @SerializedName("free"           ) var free          : Boolean?          = null,
     @SerializedName("exclusive"      ) var exclusive     : Boolean?          = null,
     @SerializedName("commingsoon"    ) var commingsoon   : Boolean?          = null,
-    @SerializedName("info"           ) var info          : ArrayList<String> = arrayListOf()
 
 )
 

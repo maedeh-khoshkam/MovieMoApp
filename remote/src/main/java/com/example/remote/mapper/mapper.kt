@@ -5,48 +5,48 @@ import com.example.data.models.*
 import com.example.remote.models.*
 
 
-fun List<AttributesModel>.mapFromModel(): List<AttributesEntity> {
+fun List<MovieModel>.mapFromModel(): List<AttributesEntity> {
     return map {
         val item = AttributesEntity(
-            it.linkType,
-            it.linkKey,
-            it.theme,
-            it.outputType,
-            it.movieId,
-            it.uid,
-            it.movieTitle,
-            it.movieTitleEn,
-            it.tagId,
-            it.serial.mapFromModel(),
-            it.watermark,
-            it.HD,
-            it.watchListAction,
-            it.commingsoonTxt,
-            it.relData.mapFromModel(),
-            it.badge.mapFromModel(),
-            it.rateEnable,
-            it.descr,
-            it.cover,
-            it.publishDate,
-            it.ageRange,
-            it.pic.mapFromModel(),
-            it.rateAvrage,
-            it.avgRateLabel,
-            it.proYear,
-            it.imdbRate,
-            it.categories.mapFromModel(),
-            it.duration,
-            it.countries.mapFromModel(),
-            it.dubbed.mapFromModel(),
-            it.subtitle.mapFromModel(),
-            it.audio.mapFromModel(),
-            it.languageInfo.mapFromModel(),
-            it.director,
-            it.lastWatch,
-            it.freemium,
-            it.position,
-            it.sid,
-            it.uuid
+            it.attributes.linkType,
+            it.attributes.linkKey,
+            it.attributes.theme,
+            it.attributes.outputType,
+            it.attributes.movieId,
+            it.attributes.uid,
+            it.attributes.movieTitle,
+            it.attributes.movieTitleEn,
+            it.attributes.tagId,
+            it.attributes.serial.mapFromModel(),
+            it.attributes.watermark,
+            it.attributes.HD,
+            it.attributes.watchListAction,
+            it.attributes.commingsoonTxt,
+            it.attributes.relData.mapFromModel(),
+            it.attributes.badge.mapFromModel(),
+            it.attributes.rateEnable,
+            it.attributes.descr,
+            it.attributes.cover,
+            it.attributes.publishDate,
+            it.attributes.ageRange,
+            it.attributes.pic.mapFromModel(),
+            it.attributes.rateAvrage,
+            it.attributes.avgRateLabel,
+            it.attributes.proYear,
+            it.attributes.imdbRate,
+            it.attributes.categories.mapFromModel(),
+            it.attributes.duration,
+            it.attributes.countries.mapFromModel(),
+            it.attributes.dubbed.mapFromModel(),
+            it.attributes.subtitle.mapFromModel(),
+            it.attributes.audio.mapFromModel(),
+            it.attributes.languageInfo.mapFromModel(),
+            it.attributes.director,
+            it.attributes.lastWatch,
+            it.attributes.freemium,
+            it.attributes.position,
+            it.attributes.sid,
+            it.attributes.uuid
 
         )
         item
@@ -98,9 +98,7 @@ private fun BadgeModel?.mapFromModel(): BadgeEntity {
         this?.onlineRelease,
         this?.free,
         this?.exclusive,
-        this?.commingsoon,
-        this?.info
-    )
+        this?.commingsoon)
 }
 
 private fun RelDataModel?.mapFromModel(): RelDataEntity {

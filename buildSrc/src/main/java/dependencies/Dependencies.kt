@@ -42,6 +42,8 @@ object Dependencies {
         const val hiltAndroid = "com.google.dagger:hilt-android:${Versions.hiltAndroidVersion}"
         const val hiltAndroidKapt =
             "com.google.dagger:hilt-android-compiler:${Versions.hiltAndroidVersion}"
+        const val hiltNavigationAndroid =
+            "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigationAndroidVersion}"
     }
 
     object CoroutinesDep {
@@ -53,6 +55,7 @@ object Dependencies {
 
     object GlideDep {
         const val glide = "com.github.bumptech.glide:glide:${Versions.glideVersion}"
+        const val glideImage = "com.github.skydoves:landscapist-coil:${Versions.glideImageVersion}"
         const val glideKapt = "com.github.bumptech.glide:compiler:${Versions.glideVersion}"
     }
 
@@ -63,7 +66,8 @@ object Dependencies {
         const val composeMaterial = "androidx.compose.material:material:${Versions.composeVersion}"
         const val composeMaterialIconCore = "androidx.compose.material:material-icons-core:${Versions.composeVersion}"
         const val composeMaterialIconExtended = "androidx.compose.material:material-icons-extended:${Versions.composeVersion}"
-
+        const val naviagationCompose = "androidx.navigation:navigation-compose:${Versions.navigationComposeVersion}"
+        const val liveDataCompose = "androidx.compose.runtime:runtime-livedata:${Versions.composeVersion}"
 
     }
 

@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.moviemo">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:name=".MainApplication"
@@ -15,7 +17,7 @@
         android:theme="@style/Theme.MovieMo"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MovieActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

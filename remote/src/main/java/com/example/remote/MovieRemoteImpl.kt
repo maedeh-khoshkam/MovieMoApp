@@ -9,7 +9,7 @@ import javax.inject.Inject
 
 class MovieRemoteImpl @Inject constructor(private val movieService: MovieService) : MovieRemote {
     override suspend fun getMovies(query: String): List<AttributesEntity> {
-        return movieService.getMovies(query).mapFromModel()
+        return movieService.getMovies(query).data.mapFromModel()
     }
 
 

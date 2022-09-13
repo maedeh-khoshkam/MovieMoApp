@@ -24,6 +24,7 @@ object UiDep {
 
     // Hilt
     const val daggerHilt = Dependencies.DaggerHiltDep.hiltAndroid
+    const val hiltNavigationAndroid = Dependencies.DaggerHiltDep.hiltNavigationAndroid
     const val daggerHiltKapt = Dependencies.DaggerHiltDep.hiltAndroidKapt
 
     //Jetpack Compose
@@ -33,6 +34,8 @@ object UiDep {
     const val composeMaterial = Dependencies.JetpackCompose.composeMaterial
     const val composeMaterialIconCore = Dependencies.JetpackCompose.composeMaterialIconCore
     const val composeMaterialIconExtended = Dependencies.JetpackCompose.composeMaterialIconExtended
+    const val navigationCompose = Dependencies.JetpackCompose.naviagationCompose
+    const val liveDataCompose = Dependencies.JetpackCompose.liveDataCompose
 
     // Coroutines
     val Coroutines = listOf(
@@ -43,6 +46,7 @@ object UiDep {
 
 
     const val glide = Dependencies.GlideDep.glide
+    const val glideImage = Dependencies.GlideDep.glideImage
     const val glideKapt = Dependencies.GlideDep.glideKapt
     const val timber = Dependencies.TimberDep.timber
 
