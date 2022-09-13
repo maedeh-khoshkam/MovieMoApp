@@ -45,9 +45,7 @@ object UiDep {
 
 
 
-    const val glide = Dependencies.GlideDep.glide
-    const val glideImage = Dependencies.GlideDep.glideImage
-    const val glideKapt = Dependencies.GlideDep.glideKapt
+    const val CoilImage = Dependencies.GlideDep.CoilImage
     const val timber = Dependencies.TimberDep.timber
 
     object Test {

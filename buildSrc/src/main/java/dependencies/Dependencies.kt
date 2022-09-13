@@ -54,9 +54,7 @@ object Dependencies {
     }
 
     object GlideDep {
-        const val glide = "com.github.bumptech.glide:glide:${Versions.glideVersion}"
-        const val glideImage = "com.github.skydoves:landscapist-coil:${Versions.glideImageVersion}"
-        const val glideKapt = "com.github.bumptech.glide:compiler:${Versions.glideVersion}"
+        const val CoilImage = "com.github.skydoves:landscapist-coil:${Versions.CoilImageVersion}"
     }
 
     object JetpackCompose {

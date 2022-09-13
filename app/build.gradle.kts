@@ -102,10 +102,8 @@ dependencies {
     implementation(UiDep.composeMaterialIconExtended)
     implementation(UiDep.navigationCompose)
     implementation(UiDep.liveDataCompose)
-    // Glide
-    implementation(UiDep.glide)
-    implementation(UiDep.glideImage)
-    kapt(UiDep.glideKapt)
+    // Coil
+    implementation(UiDep.CoilImage)
 
     // Timber
     implementation(UiDep.timber)

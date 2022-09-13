@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
-import com.example.bark.ui.theme.MovieMoTheme
+import com.example.moviemo.ui.theme.MovieMoTheme
 import com.example.moviemo.base.BaseActivity
 import com.example.moviemo.ui.screens.MainScreen
 import dagger.hilt.android.AndroidEntryPoint
