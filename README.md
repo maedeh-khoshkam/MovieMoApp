@@ -4,8 +4,7 @@ The MovieMo - App consuming a [Movie API](https://www.filimo.com/api/en/v1/movie
 This app shows the usage of the new Navigation Architecture Component.
 
 **App features:**
-- List of Movies
-- Detail of Movie
+- Movie List Screen
 
 
 ## Screenshots
