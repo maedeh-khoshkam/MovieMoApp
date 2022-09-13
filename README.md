@@ -1,7 +1,7 @@
 # MovieMo
 The MovieMo - App consuming a [Movie API](https://www.filimo.com/api/en/v1/movie/movie/list/tagid/1000300/text/{Query}/sug/on) to display Movies it has been built with clean architecture principles, Repository Pattern, and MVVM pattern as well as Architecture Components.
 
-This app shows the usage of the new Navigation Architecture Component.
+This app shows the usage of the new Navigation Compose.
 
 **App features:**
 - Movie List Screen
